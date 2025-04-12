@@ -10,28 +10,20 @@ $blockMargin: 10px;
 $largeMargin: 20px;
 
 // Colors
-$black: #000000ff;
-$gray: #808080ff;
-$byzantium: #8f286fff;
-$harvest-gold: #eca400ff;
-$persian-green: #1b998bff;
-$cerulean: #006992ff;
-$white: #ffffffff;
+$purple: #7d087aff;
+$black: #040303ff;
+$green-yellow: #c0fe70ff;
+$wisteria: #c49cf5ff;
+$cosmic-latte: #fcf2dcff;
 
-$color-primary: $black !default;
-$color-secondary: $white !default;
+$purple-rgb: rgba(125, 8, 122, 1);
+$black-rgb: rgba(4, 3, 3, 1);
+$green-yellow-rgb: rgba(192, 254, 112, 1);
+$wisteria-rgb: rgba(196, 156, 245, 1);
+$cosmic-latte-rgb: rgba(252, 242, 220, 1);
 
-$color-high-primary: $byzantium !default;
-$color-high-secondary: $harvest-gold !default;
-$color-high-tertiary: $persian-green !default;
-
-$body-color: $color-primary !default;
-$link-color: $color-high-tertiary !default;
-$selection-bg: $color-high-tertiary !default;
-$code-color: $color-primary !default;
-
-// Background of the presentation
-$backgroundColor: $color-secondary !default;
+$body-color: $cosmic-latte !default;
+$backgroundColor: $purple !default;
 
 // Typography
 $mainFont: "Lato", sans-serif !default;
@@ -40,15 +32,12 @@ $body-line-height: 1.5;
 
 $headingMargin: 0;
 $headingFont: "League Gothic", sans-serif !default;
-$headingColor: $color-high-primary;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingFontWeight: bold;
 $headingTextShadow: none;
-$headingFontWeight: normal;
 
 $heading1Size: 3.77em;
-$heading1TextShadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 $heading2Size: 2.11em;
 $heading3Size: 1.55em;
 $heading4Size: 1em;
@@ -64,95 +53,210 @@ body {
   font-size: $mainFontSize;
   line-height: $body-line-height;
   color: $body-color;
-  background-color: $backgroundColor;
+  background-color: $backgroundColor !important;
 }
 
 a {
-  color: $link-color;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: $green-yellow !important;
+  text-decoration: underline !important;
 
   &:hover {
-    color: darken($link-color, 10%);
-    text-decoration: underline;
+    color: $green-yellow !important;
+    background-color: $black !important;
   }
 }
 
-.bold {
+/* Headings */
+h1 {
+  font-family: $headingFont;
+  font-size: $heading1Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin: $headingMargin;
+  text-shadow: 3px 4px 5px $black;
+}
+
+h2 {
+  font-family: $headingFont;
+  font-size: $heading2Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin: $headingMargin;
+  text-shadow: 3px 4px 5px $black;
+}
+
+h3 {
+  font-family: $headingFont;
+  font-size: $heading3Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin: $headingMargin;
+}
+
+h4 {
+  font-family: $headingFont;
+  font-size: $heading4Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin: $headingMargin;
+}
+
+/* Code block */
+code {
+  $code-color: $wisteria !important;
+  background-color: darken($backgroundColor, 10%) !important;
+  padding: $smallMargin;
+  border-radius: 5px;
+  font-size: $mainFontSize / 2.5;
+  line-height: 1;
+}
+
+/* List styling */
+ul {
+  padding-left: 0;
+  margin-left: $blockMargin;
+}
+
+.text-color-purple {
+  color: $purple !important;
+}
+
+.text-color-black {
+  color: $black !important;
+}
+
+.text-color-green-yellow {
+  color: $green-yellow !important;
+}
+
+.text-color-wisteria {
+  color: $wisteria !important;
+}
+
+.text-color-latte {
+  color: $cosmic-latte !important;
+}
+
+.text-background-purple {
+  background-color: $purple;
+  color: $cosmic-latte;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+.text-background-black {
+  background-color: $black;
+  color: $cosmic-latte;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+.text-background-green-yellow {
+  background-color: $green-yellow;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+.text-background-wisteria {
+  background-color: $wisteria;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+.text-background-latte {
+  background-color: $cosmic-latte;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+.text-color-darker {
+  filter: brightness(50%);
+}
+
+.text-color-brigher {
+  filter: brightness(250%);
+}
+
+.text-bold {
   font-weight: bold;
 }
 
-.italic {
+.text-italic {
   font-style: italic;
 }
 
-.underline {
+.text-underline {
   text-decoration: underline;
 }
 
-.strike {
+.text-strike {
   text-decoration: line-through;
 }
 
-.text-color-primary {
-  color: $color-primary;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
-.text-color-secondary {
-  color: $color-secondary;
+.text-lowercase {
+  text-transform: lowercase;
 }
 
-.text-color-highlight-primary {
-  background-color: $color-high-primary;
-  color: $white;
+.text-capitalize {
+  text-transform: capitalize;
 }
 
-.text-color-highlight-secondary {
-  background-color: $color-high-secondary;
-  color: $white;
+.text-normal {
+  text-transform: none;
 }
 
-.text-color-highlight-tertiary {
-  background-color: $color-high-tertiary;
-  color: $white;
+.text-font-body {
+  font-family: $mainFont;
 }
 
-.textcenter {
+.text-font-heading {
+  font-family: $headingFont;
+}
+
+.text-center {
   text-align: center;
 }
 
-/* Headings */
-h1,
-.reveal h1 {
-  font-family: $headingFont;
-  font-size: $heading1Size;
-  color: $headingColor;
-  line-height: $headingLineHeight;
-  letter-spacing: $headingLetterSpacing;
-  text-transform: $headingTextTransform;
-  text-shadow: $heading1TextShadow;
-  font-weight: $headingFontWeight;
-  margin: $headingMargin;
+.text-left {
+  text-align: left;
 }
 
-h2,
-.reveal h2 {
-  font-family: $headingFont;
-  font-size: $heading2Size;
-  color: $headingColor;
-  line-height: $headingLineHeight;
-  letter-spacing: $headingLetterSpacing;
-  text-transform: $headingTextTransform;
-  font-weight: $headingFontWeight;
-  margin: $headingMargin;
+.text-right {
+  text-align: right;
 }
 
+.text-smaller {
+  font-size: $mainFontSize * 0.7;
+}
+
+.text-larger {
+  font-size: $mainFontSize * 1.3;
+}
 
 /* Slide content layout */
 .reveal .slides {
   max-width: $content-max-width;
   margin: auto;
   padding: 0 $smallMargin;
+}
+
+.center-vertical {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Constrain figures and other large block elements */
@@ -169,51 +273,37 @@ h2,
 }
 
 /* Specialised sections */
-.reveal .title {
-  background-color: $headingColor;
-  color: $backgroundColor;
-  text-align: center;
+.reveal .bg-purple {
+  background-color: $purple;
+}
+.reveal .bg-black {
+  background-color: $black;
+}
+.reveal .bg-green-yellow {
+  background-color: $green-yellow;
+}
+.reveal .bg-wisteria {
+  background-color: $wisteria;
 }
 
-.reveal .subtitle {
-  background-color: $color-high-secondary;
-  color: $backgroundColor;
-  text-align: center;
-}
-
-.reveal .inverse {
-  color: $color-secondary;
-  background-color: $color-primary;
+.reveal .bg-cosmic-latte {
+  background-color: $cosmic-latte;
 }
 
 .reveal .exercise {
-  background-color: $color-high-tertiary;
-  color: $color-secondary;
+  background-color: $green-yellow;
+  color: $black;
 }
 
 /* Blockquote */
 .reveal .blockquote {
-  font-style: italic;
-  border-left: 6px solid $color-high-primary;
   padding: $smallMargin;
   border-radius: 25px;
-  border-top: 3px solid $gray;
-  border-bottom: 3px solid $gray;
-  border-right: 3px solid $gray;
-  background-color: $color-secondary;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Code block */
-code {
-  background-color: darken($backgroundColor, 20%);
-  padding: $smallMargin;
-  border-radius: 5px;
-}
-
-/* List styling */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: $blockMargin;
+  border-left: 6px solid $black;
+  border-top: 3px solid $black;
+  border-bottom: 3px solid $black;
+  border-right: 3px solid $black;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
