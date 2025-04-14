@@ -77,12 +77,12 @@ include_local_figure("flyer_cut.png")
 ::: {data-id="box3" style="background: #040303ff; width: 120px; height: 15px; margin: 0px;"}
 :::
 
-::: {data-id="box3" style="background: #c0fe70ff; width: 120px; height: 15px; margin: 0px;"}
+::: {data-id="box3" style="background: #c2ff76ff; width: 120px; height: 15px; margin: 0px;"}
 :::
 :::
 
 ::: {.text-bold}
-Introduction to [GitHub]{.text-background-wisteria} and [Version Control]{.text-background-green-yellow} 
+[Introduction to]{.text-font-lobster} [GitHub]{.text-background-wisteria .text-bold} [and]{.text-font-lobster} [Version Control]{.text-background-green-yellow .text-bold} 
 :::
 
 <br>
@@ -181,7 +181,7 @@ Introduction to [GitHub]{.text-background-wisteria} and [Version Control]{.text-
 ::: {data-id="box3" style="background: #040303ff; width: 120px; height: 15px; margin: 0px;"}
 :::
 
-::: {data-id="box3" style="background: #c0fe70ff; width: 120px; height: 15px; margin: 0px;"}
+::: {data-id="box3" style="background: #c2ff76ff; width: 120px; height: 15px; margin: 0px;"}
 :::
 ::::
 
