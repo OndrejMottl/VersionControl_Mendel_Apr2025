@@ -43,14 +43,14 @@ include_local_figure <- function(data_source) {
 }
 ```
 
-# 
+# {.bg-purple}
 
 ```{r}
 #| label: lecture_intro
 include_local_figure("flyer.png")
 ```
 
-# 
+# {.bg-purple}
 
 :::: {.columns}
 
@@ -81,21 +81,21 @@ include_local_figure("flyer_cut.png")
 :::
 :::
 
-::: {.text-bold}
-[Introduction to]{.text-font-lobster} [GitHub]{.text-background-wisteria .text-bold} [and]{.text-font-lobster} [Version Control]{.text-background-green-yellow .text-bold} 
+::: {.text-larger .text-color-green-yellow .text-font-lobster}
+Introduction to [GitHub]{.text-font-fredoka .text-bold .text-color-latte} and [Version Control]{.text-font-fredoka .text-bold .text-color-latte} 
 :::
 
 <br>
 
 ::: {.text-right}
-Ondřej Mottl[👤](https://ondrejmottl.github.io/)
+[👤](https://ondrejmottl.github.io/)Ondřej Mottl
 
-24.04.2025
+[24.04.2025]{.text-color-wisteria}
 
-Mendel University
+[Mendel University]{.text-color-wisteria}
 :::
 
-## 🙋[Hi!]{.text-background-purple} I am [Ondřej Mottl]{.text-background-orange}
+## 🙋Hi! I am Ondřej Mottl
 
 <br>
 
@@ -157,7 +157,7 @@ include_local_figure("QR_codes/qr_slides.png")
 
 ::::
 
-## 
+## {.bg-purple}
 
 :::: {.columns}
 
@@ -167,8 +167,8 @@ include_local_figure("QR_codes/qr_slides.png")
 <br>
 <br>
 
-::: {.text-bold}
-Introduction to [GitHub]{.text-background-wisteria} and [Version Control]{.text-background-green-yellow}
+::: {.text-larger .text-color-green-yellow .text-font-lobster}
+Introduction to [GitHub]{.text-font-fredoka .text-bold .text-color-latte} and [Version Control]{.text-font-fredoka .text-bold .text-color-latte} 
 :::
 
 :::: {.r-hstack}
