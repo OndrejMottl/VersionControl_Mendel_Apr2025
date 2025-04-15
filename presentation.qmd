@@ -129,6 +129,213 @@ include_local_figure("About/head_photo.png")
 
 ::::
 
+## Evolution
+
+```{r}
+#| label: evolution
+include_local_figure("Scriberia/openresearch.jpg")
+```
+
+::: footer
+[This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence](https://zenodo.org/doi/10.5281/zenodo.3332807)
+:::
+
+## Open Science
+
+```{r}
+#| label: open-science
+include_local_figure("Open_Science/UNESCO-Open_science-pillars-en.png")
+```
+
+::: footer
+[UNESCO (2022). Understanding open science — Factsheet — SC-PBS-STIP/2022/OST/1.](https://doi.org/10.54677/UTCD9302)
+:::
+
+## A better view
+
+```{r}
+#| label: open-science-taxonomy
+include_local_figure("Open_Science/os_taxonomy.png")
+```
+
+::: footer
+[https://www.fosteropenscience.eu/](https://www.fosteropenscience.eu/)
+:::
+
+## The Journey
+
+```{r}
+#| label: open-science-journey
+include_local_figure("Scriberia/ReproducibleJourney.jpg")
+```
+
+::: footer
+[This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence](https://zenodo.org/doi/10.5281/zenodo.3332807)
+:::
+
+# [Version control]{.bold .r-fit-text .text-color-latte} {.bg-purple}
+
+## Ring a bell? {.text-center}
+
+```{r}
+#| label: final-final
+knitr::include_graphics("https://biostats-r.github.io/biostats/github/Pics/gittutorial/phd101212s.gif")
+```
+
+## What is Version Control? 🤔
+
+```{r}
+#| label: VersionControl
+include_local_figure("Scriberia/VersionControl.jpg")
+```
+
+::: {.text-center}
+It is all about [keeping track]{.text-background-purple} of [changes]{.text-background-wisteria} 📓✍️
+:::
+
+::: footer
+[This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence](https://zenodo.org/doi/10.5281/zenodo.3332807)
+:::
+
+## Exercise {.exercise}
+
+`r countdown(minutes = 3)`
+
+:::: columns
+
+::: {.column width="50%"}
+
+### Do you recognize some of these questions?
+
+* *It broke … hopefully I have a working version somewhere?*
+* *Can you please send me the latest version?*
+* *Which version are you using?*
+* *I am sure it used to work. When did it change?*
+* *My laptop is gone. Is my data now gone?*
+
+:::
+
+::: {.column width="50%" }
+
+### How do you keep track of changes?
+
+```{r}
+#| label: version-nightmare
+knitr::include_graphics("https://ecorepsci.github.io/reproducible-science/img/version-nightmare.png")
+```
+
+:::
+
+::::
+
+::: footer
+[Reproducible Data Science](https://ecorepsci.github.io/reproducible-science/index.html)
+:::
+
+##
+
+:::: columns
+
+::: {.column width="45%"}
+
+### Git {.textcenter}
+
+* local software
+* keep track of changes of files 
+
+<br>
+
+```{r}
+#| label: git-logo
+#| fig-width: 1
+#| fig-height: 1 
+include_local_figure("Logos/Git_icon.svg.png")
+```
+
+:::
+
+::: {.column width="10%" }
+:::
+
+::: {.column width="45%" }
+
+### GitHub {.textcenter}
+
+* host server
+* store (git) the data
+* project management, collaboration, publishing
+
+```{r}
+#| label: github-logo
+include_local_figure("Logos/Github-desktop-logo-symbol.svg.png")
+```
+
+:::
+
+::::
+
+## Git/GitHub setup AKA "git hell"
+
+```{r}
+#| label: ErrorManagement
+include_local_figure("Scriberia/ErrorManagement.jpg")
+```
+
+Follow instructions in [Version Control - git hell](https://ondrejmottl.github.io/VersionControl_gitHell/) (a separate presentation).
+
+::: {.blockquote}
+Getting all the necessary software installed, configured, and playing nicely together is honestly half the battle ... **Brace yourself for some pain**
+:::
+
+::: footer
+[Happy Git and GitHub for the useR](https://happygitwithr.com/install-intro) |
+[This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence](https://zenodo.org/doi/10.5281/zenodo.3332807)
+:::
+
+## Basic vocabulary
+
+:::: columns
+
+::: {.column width="45%" .incremental}
+
+ * [R script]{.text-background-purple} is a record of code.
+ * [R Project]{.text-background-purple} is self contained project/study/paper containg R scripts, data, figures, etc.
+ * Every such project is called [repository]{.text-background-wisteria} (ie a *repo*) 
+ * Your **local** repository is called [local]{.text-background-latte}
+ * Your **online** repository, is called [remote]{.text-background-latte}
+
+:::
+
+:::{.column width="55%" .fragment}
+
+<br>
+<br>
+<br>
+
+```{r}
+#| label: local-remote
+knitr::include_graphics("https://user.oc-static.com/upload/2022/01/04/16412576933806_image30.png")
+```
+:::
+
+::::
+
+::: footer
+[https://openclassrooms.com/](https://openclassrooms.com/en/courses/7476131-manage-your-code-project-with-git-and-github/7681891-work-in-your-local-git-repository)
+::: 
+
+## [Note on practital exercises]{.r-fit-text} {.bg-latte}
+
+```{r}
+#| label: practical-exercise-note
+include_local_figure("Exercise/monkey_see_monkey_do_by_adiasarahma.jpg")
+```
+
+::: footer
+[image by adiasarahma](https://www.deviantart.com/adiasarahma/)
+:::
+
+
 ## This presentation {.text-center .bg-black .text-color-latte}
 
 <br>
