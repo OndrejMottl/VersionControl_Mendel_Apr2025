@@ -25,15 +25,17 @@ $black: #040303ff;
 $green-yellow: #c2ff76ff;
 $wisteria: #c49cf5ff;
 $cosmic-latte: #fcf2dcff;
+$white: #ffffff;
 
 $purple-rgb: rgba(125, 3, 113, 1);
 $black-rgb: rgba(4, 3, 3, 1);
 $green-yellow-rgb: rgba(194, 255, 118, 1);
 $wisteria-rgb: rgba(196, 156, 245, 1);
 $cosmic-latte-rgb: rgba(252, 242, 220, 1);
+$white-rgb: rgba(255, 255, 255, 1);
 
 $body-color: $black;
-$backgroundColor: $cosmic-latte;
+$backgroundColor: $white;
 
 // Typography
 $mainFont: "Fredoka", sans-serif !default;
@@ -90,6 +92,7 @@ h1 {
   margin: $headingMargin;
   color: $headingColor;
   text-shadow: 3px 4px 5px $black;
+  text-align: center;
 }
 
 h2 {
@@ -101,7 +104,7 @@ h2 {
   margin: $headingMargin;
   color: $headingColor;
   text-shadow: 3px 4px 5px $black;
-
+  text-align: center;
 }
 
 h3 {
@@ -320,6 +323,10 @@ ul {
 
 .reveal .bg-cosmic-latte {
   background-color: $cosmic-latte;
+}
+
+.reveal .bg-white {
+  background-color: $white;
 }
 
 .reveal .exercise {
