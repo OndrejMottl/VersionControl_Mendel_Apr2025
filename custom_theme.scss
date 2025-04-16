@@ -1,8 +1,7 @@
 /*-- scss:defaults --*/
 
-@import url(./fonts/league-gothic/league-gothic.css);
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 // Vertical spacing between blocks of text
 $smallMargin: 5px;
@@ -10,32 +9,35 @@ $blockMargin: 10px;
 $largeMargin: 20px;
 
 // Colors
-$purple: #7d087aff;
+$purple: #7d0371ff;
 $black: #040303ff;
-$green-yellow: #c0fe70ff;
+$green-yellow: #c2ff76ff;
 $wisteria: #c49cf5ff;
 $cosmic-latte: #fcf2dcff;
+$white: #ffffff;
 
-$purple-rgb: rgba(125, 8, 122, 1);
+$purple-rgb: rgba(125, 3, 113, 1);
 $black-rgb: rgba(4, 3, 3, 1);
-$green-yellow-rgb: rgba(192, 254, 112, 1);
+$green-yellow-rgb: rgba(194, 255, 118, 1);
 $wisteria-rgb: rgba(196, 156, 245, 1);
 $cosmic-latte-rgb: rgba(252, 242, 220, 1);
+$white-rgb: rgba(255, 255, 255, 1);
 
-$body-color: $cosmic-latte !default;
-$backgroundColor: $purple !default;
+$body-color: $black;
+$backgroundColor: $white;
 
 // Typography
-$mainFont: "Lato", sans-serif !default;
+$mainFont: "Fredoka", sans-serif !default;
 $mainFontSize: 30px;
 $body-line-height: 1.5;
 
 $headingMargin: 0;
-$headingFont: "League Gothic", sans-serif !default;
+$headingFont: "Lobster", sans-serif !default;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingFontWeight: bold;
-$headingTextShadow: none;
+$headingColor: $purple;
+$headingShadow: 3px 4px 5px $black !default;
 
 $heading1Size: 3.77em;
 $heading2Size: 2.11em;
@@ -57,7 +59,10 @@ body {
 }
 
 a {
-  color: $green-yellow !important;
+  padding: $smallMargin;
+  border-radius: 5px;
+  background-color: $green-yellow !important;
+  color: $black !important;
   text-decoration: underline !important;
 
   &:hover {
@@ -74,7 +79,9 @@ h1 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin: $headingMargin;
+  color: $headingColor;
   text-shadow: 3px 4px 5px $black;
+  text-align: center;
 }
 
 h2 {
@@ -84,7 +91,9 @@ h2 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin: $headingMargin;
+  color: $headingColor;
   text-shadow: 3px 4px 5px $black;
+  text-align: center;
 }
 
 h3 {
@@ -94,6 +103,8 @@ h3 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin: $headingMargin;
+  text-shadow: none;
+  color: $body-color;
 }
 
 h4 {
@@ -103,6 +114,8 @@ h4 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin: $headingMargin;
+  text-shadow: none;
+  color: $body-color;
 }
 
 /* Code block */
@@ -182,6 +195,14 @@ ul {
 
 .text-color-brigher {
   filter: brightness(250%);
+}
+
+.text-font-lobster {
+  font-family: "Lobster", sans-serif;
+}
+
+.text-font-fredoka {
+  font-family: "Fredoka", sans-serif;
 }
 
 .text-bold {
@@ -276,18 +297,25 @@ ul {
 .reveal .bg-purple {
   background-color: $purple;
 }
+
 .reveal .bg-black {
   background-color: $black;
 }
+
 .reveal .bg-green-yellow {
   background-color: $green-yellow;
 }
+
 .reveal .bg-wisteria {
   background-color: $wisteria;
 }
 
 .reveal .bg-cosmic-latte {
   background-color: $cosmic-latte;
+}
+
+.reveal .bg-white {
+  background-color: $white;
 }
 
 .reveal .exercise {
