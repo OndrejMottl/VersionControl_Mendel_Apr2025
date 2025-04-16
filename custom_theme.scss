@@ -1,18 +1,7 @@
 /*-- scss:defaults --*/
 
-@font-face {
-  font-family: "Fredoka";
-  src: local("Fonts/FredokaOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lobster";
-  src: local("Fonts/Lobster-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 // Vertical spacing between blocks of text
 $smallMargin: 5px;
