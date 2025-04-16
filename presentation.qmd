@@ -128,6 +128,62 @@ include_local_figure("About/head_photo.png")
 
 ::::
 
+## Fast & Furious
+
+:::: {.columns .center-vertical}
+
+::: {.column width="35%"}
+
+```{r}
+#| label: alot
+knitr::include_graphics("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDFuYzRyMzh2aXlyeHNlb2YzcDgxZ2R2d2RoNnp3M28yYTBlNnhwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n6mEMqAuYOQ8l8qcEE/giphy.gif")
+```
+
+:::
+
+::: {.column width="65%"}
+
+```{r}
+#| label: fast-furious
+knitr::include_graphics("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDhpNWZvdzB5eTZuOGs3eTJ4dzhpZnRrOXQzNWZpanl0dHF6eTJkNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/B1uajA01vvL91Urtsp/giphy.gif")
+```
+
+:::
+
+::::
+
+::: footer
+[https://giphy.com/](https://giphy.com/)
+:::
+
+## [This presentation]{.text-color-latte} {.text-center .bg-black}
+
+<br>
+<br>
+
+[😸Code on GitHub: OndrejMottl/VersionControl_Mendel_Apr2025](https://github.com/OndrejMottl/VersionControl_Mendel_Apr2025)
+
+![](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+:::
+
+::: {.column width="30%"}
+```{r}
+#| label: qr_slides
+include_local_figure("QR_codes/qr_slides.png")
+```
+:::
+
+::: {.column width="33%"}
+:::
+
+::::
+
 ## Evolution
 
 ```{r}
@@ -335,33 +391,355 @@ include_local_figure("Exercise/monkey_see_monkey_do_by_adiasarahma.jpg")
 :::
 
 
-## This presentation {.text-center .bg-black .text-color-latte}
+## Git init (project first)
 
-<br>
-<br>
+Activate [git]{.text-background-purple} for a repo 
 
-[😸 Code on GitHub](https://github.com/OndrejMottl/VersionControl_Mendel_Apr2025)
+::::: {.panel-tabset}
 
-[![](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### RStudio
 
-<br>
+For existing project
+
+```{r}
+#| label: git-init-rstudio
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+usethis::use_git()
+```
+
+Create new project with git tracking
+
+```{r}
+#| label: git-init-rstudio-new
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+usethis::create_project("<DIRECTORY>")
+# switch to the new project
+usethis::use_git()
+```
+
+### GH Desktop
+
+Create new project with git tracking
 
 :::: {.columns}
 
-::: {.column width="33%"}
+::: {.column width="25%"}
 :::
 
-::: {.column width="30%"}
+::: {.column width="50%"}
 ```{r}
-#| label: qr_slides
-include_local_figure("QR_codes/qr_slides.png")
+#| label: git-init-GH-new
+knitr::include_graphics("https://docs.github.com/assets/cb-143755/mw-1440/images/help/desktop/lets-get-started.webp")
 ```
 :::
 
-::: {.column width="33%"}
+::::
+
+### Command line
+
+For existing project
+
+```{bash}
+#| label: git-init-cl
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+git init
+```
+
+Create new project with git tracking
+
+```{bash}
+#| label: git-init-cl-new
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+git init <DIRECTORY>
+```
+
+### VS Code
+
+Git integration is automatic in [Source control]{.text-background-wisteria} panel
+
+```{r}
+#| label: git-init-vscode
+knitr::include_graphics("https://www.sqlshack.com/wp-content/uploads/2020/07/visual-studio-code-and-git-source-control.png")
+```
+
+:::::
+
+::: footer
+[SQLShack](https://www.sqlshack.com/visual-studio-code-vs-code-integration-with-git-source-control/)
+:::
+
+## [Practical Exercise]{.r-fit-text} {.exercise .text-center}
+
+::: {.r-fit-text} 
+* Make a new project with Git tracking
+:::
+
+`r countdown(minutes = 10)`
+
+## Git clone (repo first)
+
+Copy (download) for  [remote repo]{.text-background-purple} to [local]{.text-background-wisteria} machine
+
+Example of online repo: [OndrejMottl/VersionControl-playground](https://github.com/OndrejMottl/VersionControl-playground)
+
+::::: {.panel-tabset}
+
+### RStudio
+
+```{r}
+#| label: git-clone-rstudio
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+usethis::create_from_github(
+  repo_spec = "https://github.com/<OWNER>/<REPO>.git",
+  destdir = "<DIRECTORY>",
+  fork = FALSE
+  )
+```
+
+### GH Desktop
+
+```{r}
+#| label: git-clone-GH
+knitr::include_graphics("https://docs.github.com/assets/cb-10969/mw-1440/images/help/desktop/clone-file-menu-windows.webp")
+```
+
+
+### Command line
+
+```{bash}
+#| label: git-colne-cl
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+git clone https://github.com/<OWNER>/<REPO>.git <DIRECTORY>
+```
+
+### VS Code
+
+Open [Command Palette]{.text-background-wisteria} (`Ctrl+Shift+p`)
+
+Paste in URL: `"https://github.com/<OWNER>/<REPO>.git"`
+
+:::::
+
+## [Practical Exercise]{.r-fit-text} {.exercise .text-center}
+
+::: {.r-fit-text} 
+clone a repo (e.g. any repo from [OndrejMottl](https://github.com/OndrejMottl?tab=repositories))
+:::
+
+`r countdown(minutes = 5)`
+
+## a commit
+
+A [**commit**]{.text-background-purple} is a [record]{.text-background-wisteria} of a change
+
+If you create or edit a file in your repository and save the changes, you need to [record]{.text-background-wisteria} your change via a [**commit**]{.text-background-purple}
+
+::::: {.fragment}
+
+### Chess analogy? 
+
+:::: columns
+
+::: {.column width="45%"}
+
+```{r}
+#| label: chess
+knitr::include_graphics("https://www.wikihow.com/images/thumb/0/06/Play-Chess-Step-28-Version-5.jpg/aid54279-v4-728px-Play-Chess-Step-28-Version-5.jpg")
+```
+
+:::
+
+::: {.column width="45%" }
+
+**Chess move diary**:
+
+* Bc4 (Bishop to c4)
+* Nf3 (Knight to f3)
+* Qc7 (Queen to c7)
+
 :::
 
 ::::
+
+:::::
+
+::: footer
+[wikiHow: How to Play Chess?](https://www.wikihow.com/Play-Chess)
+:::
+
+## a commit
+
+:::: columns
+::: {.column width="45%" .text-center} 
+```{r}
+#| label: git1-chess
+knitr::include_graphics("https://www.wikihow.com/images/thumb/c/c3/Play-Chess-Step-24-Version-5.jpg/aid54279-v4-728px-Play-Chess-Step-24-Version-5.jpg")
+```
+
+*Pawn to d4*
+:::
+
+::: {.column width="45%" .text-center .fragment}
+```{r}
+#| label: git01
+include_local_figure("git/git01.png")
+```
+
+*Edit line 32 of file A*
+:::
+::::
+
+::: footer
+[wikiHow: How to Play Chess?](https://www.wikihow.com/Play-Chess)
+:::
+
+## a commit
+
+<br>
+<br>
+
+```{r}
+#| label: git02
+include_local_figure("git/git02.png")
+```
+
+
+## 3 states of a file 
+
+<br>
+
+:::: columns
+::: {.column width="29%"}
+```{r}
+#| label: git-stage-scheme
+knitr::include_graphics("https://git-scm.com/images/about/index1@2x.png")
+```
+:::
+
+::: {.column width="60%" .fragment}
+```{r}
+#| label: git-stage-draw
+knitr::include_graphics("https://i0.wp.com/jessitron.com/wp-content/uploads/2012/12/27eb8-screenshot2012-12-09at2.07.55pm.png")
+```
+:::
+::::
+
+::: footer
+[git---everything-is-local](https://git-scm.com/)
+
+[jessitron](https://jessitron.com/2012/12/09/git-the-many-parts-five-categories-of-files/)
+:::
+
+## Staging changes
+
+Make a change to a file and save it. Now *stage* the change:
+
+::::: {.panel-tabset}
+
+### RStudio
+
+:::: columns
+::: {.column width="45%"}
+
+```{r}
+#| label: git-stage-rstudio
+knitr::include_graphics("https://annakrystalli.me/talks/assets/git_tab.png")
+```
+
+:::
+
+::: {.column width="45%"}
+
+* two yellow `??` indicates adding a file 
+* a blue `M` indicates edit a file that has already been committed
+* a red `D` indicates deleting a file
+
+:::
+
+::::
+
+### GH Desktop
+
+:::: columns
+::: {.column width="45%"}
+
+```{r}
+#| label: git-stage-GH
+knitr::include_graphics("https://docs.github.com/assets/cb-16555/mw-1440/images/help/desktop/commit-all.webp")
+```
+
+:::
+
+::: {.column width="45%"}
+
+* The red icon indicates removed files.
+* The yellow icon indicates modified files.
+* The green icon indicates added files.
+
+:::
+
+::::
+
+### Command line
+
+```{bash}
+#| label: git-stage-cl
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+git add <FILE>
+```
+
+### VS Code
+
+:::: columns
+
+::: {.column width="20%"}
+:::
+
+
+::: {.column width="60%"}
+
+```{r}
+#| label: git-stage-VScode
+knitr::include_graphics("https://code.visualstudio.com/assets/docs/sourcecontrol/overview/stage-changes.png")
+```
+
+:::
+
+::: {.column width="20%"}
+:::
+
+::::
+
+:::::
+
+## [Practical Exercise]{.r-fit-text} {.exercise .text-center}
+
+::: {.r-fit-text} 
+1. Make changes to (a) file(s)
+2. Make a new file
+3. Stage and Unstage the changes
+:::
+
+`r countdown(minutes = 20)`
+
+
+
+---
+
 
 ## {.bg-purple}
 
@@ -436,7 +814,5 @@ include_local_figure("Logos/GH_logo.png")
 include_local_figure("flyer_cut.png")
 ```
 :::
-
-
 
 ::::
