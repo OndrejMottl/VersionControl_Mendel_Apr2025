@@ -6,7 +6,6 @@ format:
     preview-links: auto
     output-file: "index"
     output-ext: "html"
-    output-dir: "docs"
     logo: "Materials/About/personal_sticker.png"
     code-line-numbers: true
     code-overflow: wrap
