@@ -67,7 +67,7 @@ include_local_figure("flyer_cut.png")
 ::::
 
 ::: {.r-hstack}
-::: {data-id="box1" style="background: #fcf2dcff; width: 120px; height: 15px; margin: 0px;"}
+::: {data-id="box1" style="background: #ffffffff; width: 120px; height: 15px; margin: 0px;"}
 :::
 
 ::: {data-id="box2" style="background: #c49cf5ff; width: 550px; height: 15px; margin: 0px;"}
@@ -81,7 +81,7 @@ include_local_figure("flyer_cut.png")
 :::
 
 ::: {.text-larger .text-color-green-yellow .text-font-lobster}
-Introduction to [GitHub]{.text-font-fredoka .text-bold .text-color-latte} and [Version Control]{.text-font-fredoka .text-bold .text-color-latte} 
+Introduction to [GitHub]{.text-font-fredoka .text-bold .text-color-white} and [Version Control]{.text-font-fredoka .text-bold .text-color-white} 
 :::
 
 <br>
@@ -156,7 +156,7 @@ knitr::include_graphics("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDhpN
 [https://giphy.com/](https://giphy.com/)
 :::
 
-## [This presentation]{.text-color-latte} {.text-center .bg-black}
+## [This presentation]{.text-color-white} {.text-center .bg-black}
 
 <br>
 <br>
@@ -228,7 +228,7 @@ include_local_figure("Scriberia/ReproducibleJourney.jpg")
 [This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence](https://zenodo.org/doi/10.5281/zenodo.3332807)
 :::
 
-# [Version control]{.bold .r-fit-text .text-color-latte} {.bg-purple}
+# [Version control]{.bold .r-fit-text .text-color-white} {.bg-purple}
 
 ## Ring a bell? {.text-center}
 
@@ -287,7 +287,7 @@ knitr::include_graphics("https://ecorepsci.github.io/reproducible-science/img/ve
 [Reproducible Data Science](https://ecorepsci.github.io/reproducible-science/index.html)
 :::
 
-# [Fundamentals]{.bold .r-fit-text .text-color-latte} {.bg-purple}
+# [Fundamentals]{.bold .r-fit-text .text-color-white} {.bg-purple}
 
 ##
 
@@ -394,8 +394,8 @@ knitr::include_graphics("https://usethis.r-lib.org/logo.png")
  * [R script]{.text-background-purple} is a record of code.
  * [R Project]{.text-background-purple} is self contained project/study/paper containg R scripts, data, figures, etc.
  * Every such project is called [repository]{.text-background-wisteria} (ie a *repo*) 
- * Your **local** repository is called [local]{.text-background-latte}
- * Your **online** repository, is called [remote]{.text-background-latte}
+ * Your **local** repository is called [local]{.text-background-black}
+ * Your **online** repository, is called [remote]{.text-background-black}
 
 :::
 
@@ -417,7 +417,7 @@ knitr::include_graphics("https://user.oc-static.com/upload/2022/01/04/1641257693
 [https://openclassrooms.com/](https://openclassrooms.com/en/courses/7476131-manage-your-code-project-with-git-and-github/7681891-work-in-your-local-git-repository)
 ::: 
 
-## [Note on practital exercises]{.r-fit-text} {.bg-latte}
+## [Note on practital exercises]{.r-fit-text} {.bg-white}
 
 ```{r}
 #| label: practical-exercise-note
@@ -522,7 +522,7 @@ knitr::include_graphics("https://www.sqlshack.com/wp-content/uploads/2020/07/vis
 
 `r countdown(minutes = 5)`
 
-# [A record of a change]{.bold .r-fit-text .text-color-latte} {.bg-purple}
+# [A record of a change]{.bold .r-fit-text .text-color-white} {.bg-purple}
 
 ## a commit
 
@@ -869,7 +869,7 @@ knitr::include_graphics("https://happygitwithr.com/img/commit-diff-sha-tag.png")
 [Happy Git and GitHub for the useR](https://happygitwithr.com/install-intro)
 :::
 
-# [Remote]{.bold .r-fit-text .text-color-latte} {.bg-purple}
+# [Remote]{.bold .r-fit-text .text-color-white} {.bg-purple}
 
 ## remote
 
@@ -1225,7 +1225,7 @@ clone a repo (e.g. any repo from [OndrejMottl](https://github.com/OndrejMottl?ta
 
 `r countdown(minutes = 5)`
 
-# [Merge conflict]{.bold .r-fit-text .text-color-latte} {.bg-purple}
+# [Merge conflict]{.bold .r-fit-text .text-color-white} {.bg-purple}
 
 ## Merge conflict 💩💩💩
 
@@ -1234,7 +1234,7 @@ clone a repo (e.g. any repo from [OndrejMottl](https://github.com/OndrejMottl?ta
 knitr::include_graphics("https://www.simplilearn.com/ice9/free_resources_article_thumb/pull-push.JPG")
 ```
 
-A [merge conflict]{.text-background-purple} can occur when you are changing the [same line]{.text-background-wisteria} in one file [differently](.text-background-latte).
+A [merge conflict]{.text-background-purple} can occur when you are changing the [same line]{.text-background-wisteria} in one file [differently](.text-background-black).
 
 :::footer
 [https://www.simplilearn.com/](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git)
@@ -1313,7 +1313,7 @@ Then **save the file**, **stage**, and **commit** again
 
 How to undo last commit?
 
-[Variant A]{.text-background-purple}: I commited but **NOT** [pushed yet]{.text-background-latte}.
+[Variant A]{.text-background-purple}: I commited but **NOT** [pushed yet]{.text-background-black}.
 
 ::::: {.panel-tabset}
 
@@ -1357,7 +1357,7 @@ git reset --soft HEAD@{1}
 
 Open [Command Palette]{.text-background-wisteria} (`Ctrl+Shift+p`)
 
-Write [Git: Undo Last Commit]{.text-background-latte}
+Write [Git: Undo Last Commit]{.text-background-black}
 
 :::::
 
@@ -1365,7 +1365,7 @@ Write [Git: Undo Last Commit]{.text-background-latte}
 
 How to undo last commit?
 
-[Variant B]{.text-background-wisteria}: I commited but **AND** [pushed already]{.text-background-latte}.
+[Variant B]{.text-background-wisteria}: I commited but **AND** [pushed already]{.text-background-black}.
 
 ::::: {.panel-tabset}
 
@@ -1385,7 +1385,7 @@ git reset --hard <SHA>
 
 ### GH Desktop
 
-Right-click on the commit you would like to undo to and select [Revert a commit]{.text-background-latte}.
+Right-click on the commit you would like to undo to and select [Revert a commit]{.text-background-black}.
 
 :::: columns
 :::{.column width="10%"}
@@ -1413,7 +1413,7 @@ git reset --hard <SHA>
 
 ### VS Code
 
-In the [Source control]{.text-background-wisteria} panel -> **COMMITS** section -> Right-click on the commit you want to revert to -> Select the [Reset Current Branch to Previous Commit]{.text-background-latte}
+In the [Source control]{.text-background-wisteria} panel -> **COMMITS** section -> Right-click on the commit you want to revert to -> Select the [Reset Current Branch to Previous Commit]{.text-background-black}
 
 :::: columns
 :::{.column width="10%"}
@@ -1429,7 +1429,7 @@ knitr::include_graphics("https://www.gitkraken.com/wp-content/uploads/2022/03/gi
 
 :::::
 
-# [Branches]{.r-fit-text .text-color-latte} {.bg-purple .text-center}
+# [Branches]{.r-fit-text .text-color-white} {.bg-purple .text-center}
 
 ## Branches
 
@@ -1521,7 +1521,7 @@ knitr::include_graphics("https://code.visualstudio.com/assets/docs/sourcecontrol
 
 The default branch is called [main]{.text-background-purple} or [master]{.text-background-purple}
 
-Swithching between branches is sometimes called  ([checkout]{.text-background-latte})
+Swithching between branches is sometimes called  ([checkout]{.text-background-black})
 
 ‼️ Make sure that you have all changes commited before switching ‼️
 
@@ -1643,7 +1643,7 @@ knitr::include_graphics("https://www.dummies.com/wp-content/uploads/github-open-
 
 ## Pull Request - Overview
 
-Now you can [more commits]{.text-background-purple} on GitHub, (add [Comment]{.text-background-wisteria} to start discussion), or [merge]{.text-background-latte} the branch.
+Now you can [more commits]{.text-background-purple} on GitHub, (add [Comment]{.text-background-wisteria} to start discussion), or [merge]{.text-background-black} the branch.
 
 ```{r}
 #| label: git-pull-request-overview
@@ -1849,7 +1849,7 @@ git push origin --delete <BRANCH-NAME>
 
 Open [Command Palette]{.text-background-wisteria} (`Ctrl+Shift+p`)
 
-Select [Git: Delete branch ...]{.text-background-latte}
+Select [Git: Delete branch ...]{.text-background-black}
 
 :::::
 
@@ -1898,11 +1898,11 @@ Maybe next time?
 <br>
 
 ::: {.text-larger .text-color-green-yellow .text-font-lobster}
-Introduction to [GitHub]{.text-font-fredoka .text-bold .text-color-latte} and [Version Control]{.text-font-fredoka .text-bold .text-color-latte} 
+Introduction to [GitHub]{.text-font-fredoka .text-bold .text-color-white} and [Version Control]{.text-font-fredoka .text-bold .text-color-white} 
 :::
 
 :::: {.r-hstack}
-::: {data-id="box1" style="background: #fcf2dcff; width: 120px; height: 15px; margin: 0px;"}
+::: {data-id="box1" style="background: #ffffffff; width: 120px; height: 15px; margin: 0px;"}
 :::
 
 ::: {data-id="box2" style="background: #c49cf5ff; width: 550px; height: 15px; margin: 0px;"}
