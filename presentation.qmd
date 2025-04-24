@@ -484,7 +484,7 @@ I will be showing you how to use:
 #| label: rstudio-logo
 #| fig-width: 1
 #| fig-height: 1
-knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/768px-RStudio_logo_flat.svg.png")
+include_local_figure("Logos/RStudio_logo_flat.svg.png")
 ```
 
 ### [RStudio](https://rstudio.com/) 
@@ -495,7 +495,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/
 #| label: github-desktop-logo
 #| fig-width: 1
 #| fig-height: 1
-knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/768px-Github-desktop-logo-symbol.svg.png")
+include_local_figure("Logos/Github-desktop-logo-symbol.svg.png")
 ```
 
 ### [GitHub Desktop](https://desktop.github.com/)
